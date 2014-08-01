@@ -1,5 +1,7 @@
 package com.example.putitdown;
 
+import com.google.android.gms.location.Geofence;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
