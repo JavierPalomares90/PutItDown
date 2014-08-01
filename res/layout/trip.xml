@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Trip" >
+
+    
+    
+     <TextView android:id="@+id/trip_in_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:textSize="24sp"
+        android:text="@string/trip_in_progress" />
+     
+     <TextView android:id="@+id/stop_the_texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/trip_in_progress"
+        android:textSize="32sp"
+        android:text="@string/stop_the_texts" />
+     
+        <TextView android:id="@+id/stop_the_wrecks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/stop_the_texts"
+        android:textSize="32sp"
+        android:text="@string/stop_the_wrecks" />
+        
+        <TextView android:id="@+id/earn_the_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/stop_the_wrecks"
+        android:textSize="32sp"
+        android:text="@string/earn_the_rewards" />
+        
+        <Button android:id="@+id/stop_trip"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:text="@string/stop_trip" />
+    
+
+
+</RelativeLayout>

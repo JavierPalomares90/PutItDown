@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PutItDown</string>
+    <string name="plan_a_trip">Plan a trip</string>
+    <string name="action_settings">Settings</string>
+	<string name="set_destination">Search for address</string>
+    <string name="location_hint">Where would you like to go?</string>
+    <string name="start_trip">Start Trip</string>
+    <string name ="distance">0 miles</string>
+    <string name = "points"> 0 points</string>
+    <string name = "stop_the_texts"> Stop the Texts</string>
+    <string name = "stop_the_wrecks"> Stop the Wrecks</string>
+    <string name = "earn_the_rewards"> Earn the Rewards</string>
+    <string name = "stop_trip"> End Trip</string>
+    <string name = "trip_in_progress"> Trip in Progress</string>
+    <string name = "trip">Trip in progress</string>
+</resources> 
