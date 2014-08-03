@@ -19,6 +19,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.view.View.OnClickListener;
 import android.location.Location;
 import android.location.LocationListener;
@@ -73,8 +74,8 @@ public class MainActivity extends Activity {
 	}
 	
 	private void startTrip(){
-		//Address destinationAddress = mAddresses.get(mAddressIndex);
-		String destinationAddress = "Hello";
+		Address destinationAddress = mAddresses.get(mAddressIndex);
+		//String destinationAddress = "Hello";
 		Intent i = new Intent(MainActivity.this,Trip.class);
 		i.putExtra(GET_CURR_LOCATION, mCurrLocation);
 		i.putExtra(GET_DESTINATION_ADDRESS,destinationAddress);
@@ -100,9 +101,9 @@ public class MainActivity extends Activity {
 	}
 	
 	private void showAddresses(){
-		//CharSequence[] items = new CharSequence[mAddresses.size()];
-		CharSequence[] items = {"abc","def"};
-		/*
+		CharSequence[] items = new CharSequence[mAddresses.size()];
+		//CharSequence[] items = {"abc","def"};
+		
 		for(int i=0; i < mAddresses.size();i++){
 			Address address = mAddresses.get(i);
             String addressText = String.format(
@@ -117,7 +118,7 @@ public class MainActivity extends Activity {
 
 			
 			items[i] = addressText;
-		}*/
+		}
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Which is your destination?");
 		builder.setItems(items, new DialogInterface.OnClickListener() {
@@ -142,12 +143,20 @@ public class MainActivity extends Activity {
 		// RESULT_OK result code and a recognized request code
 		// If so, update the Textview showing the user-entered text.
 		if(resultCode == RESULT_OK && requestCode == GET_TRIP_SUCCESS_CODE){
-			
-		
+			Bundle extras = data.getExtras();
+			boolean success = extras.getBoolean(TRIP_SUCCESS);
+			if (success){
+				String msg = "Sucess!";
+				Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+			}else{
+				String msg = "Failure :(";
+				Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+			}
+        }
 		}
 			
 			
 
 	}
 	
-}
+

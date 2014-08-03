@@ -450,6 +450,9 @@ containing a value of this type.
     }
     public static final class string {
         public static final int action_settings=0x7f050022;
+        public static final int add_geofences_already_requested_error=0x7f050030;
+        public static final int add_geofences_result_failure=0x7f050032;
+        public static final int add_geofences_result_success=0x7f050031;
         public static final int app_name=0x7f050020;
         public static final int auth_client_needs_enabling_title=0x7f050001;
         public static final int auth_client_needs_installation_title=0x7f050002;
@@ -546,8 +549,31 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f05001e;
+        public static final int connected=0x7f050033;
+        public static final int connection_error_disabled=0x7f05003b;
+        public static final int connection_error_internal=0x7f050036;
+        public static final int connection_error_invalid=0x7f05003c;
+        public static final int connection_error_invalid_account=0x7f050037;
+        public static final int connection_error_license_check_failed=0x7f050038;
+        public static final int connection_error_misconfigured=0x7f050035;
+        public static final int connection_error_missing=0x7f05003d;
+        public static final int connection_error_needs_resolution=0x7f05003a;
+        public static final int connection_error_network=0x7f050039;
+        public static final int connection_error_outdated=0x7f05003e;
+        public static final int connection_error_sign_in_required=0x7f05003f;
+        public static final int connection_error_unknown=0x7f050040;
+        public static final int disconnected=0x7f050034;
         public static final int distance=0x7f050026;
         public static final int earn_the_rewards=0x7f05002a;
+        public static final int geofence_transition_entered=0x7f050045;
+        public static final int geofence_transition_error_detail=0x7f050041;
+        public static final int geofence_transition_exited=0x7f050046;
+        public static final int geofence_transition_invalid_type=0x7f050044;
+        public static final int geofence_transition_notification_text=0x7f050043;
+        public static final int geofence_transition_notification_title=0x7f050042;
+        public static final int geofence_transition_unknown=0x7f050047;
+        public static final int invalid_action=0x7f05002f;
+        public static final int invalid_action_detail=0x7f05002e;
         public static final int location_hint=0x7f050024;
         public static final int plan_a_trip=0x7f050021;
         public static final int points=0x7f050027;

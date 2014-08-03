@@ -15,7 +15,7 @@ public final class GeofenceUtils {
      * A log tag for the application
      */
     public static final String APPTAG = "Geofence Detection";
-
+    
     // Intent actions
     public static final String ACTION_CONNECTION_ERROR =
             "com.example.android.geofence.ACTION_CONNECTION_ERROR";
